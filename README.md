@@ -1,4 +1,4 @@
-# Project CodeIgniter 3: Koperasi Syariah (PHP Versi 5..)
+# Project CodeIgniter 3: Koperasi Syariah (Gunakan Versi PHP 5..)
 
 ## Deskripsi
 
