@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 10, 2024 at 10:40 AM
--- Server version: 10.1.21-MariaDB
+-- Generation Time: 11 Agu 2024 pada 05.36
+-- Versi Server: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ci_sessions`
+-- Struktur dari tabel `ci_sessions`
 --
 
 CREATE TABLE `ci_sessions` (
@@ -35,16 +35,17 @@ CREATE TABLE `ci_sessions` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `ci_sessions`
+-- Dumping data untuk tabel `ci_sessions`
 --
 
 INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
-('d65bc53a83983f53f11c0b1f486e388e', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36', 1723278738, '');
+('fce1615a75b19fb99e3d6103d23b0875', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36', 1723347347, ''),
+('43e99fa699a3c12e1552d11adb09cbf6', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36', 1723347234, 'a:4:{s:9:\"user_data\";s:0:\"\";s:5:\"login\";b:1;s:6:\"u_name\";s:5:\"admin\";s:5:\"level\";s:5:\"admin\";}');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jns_akun`
+-- Struktur dari tabel `jns_akun`
 --
 
 CREATE TABLE `jns_akun` (
@@ -59,7 +60,7 @@ CREATE TABLE `jns_akun` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jns_akun`
+-- Dumping data untuk tabel `jns_akun`
 --
 
 INSERT INTO `jns_akun` (`id`, `kd_aktiva`, `jns_trans`, `akun`, `laba_rugi`, `pemasukan`, `pengeluaran`, `aktif`) VALUES
@@ -106,7 +107,7 @@ INSERT INTO `jns_akun` (`id`, `kd_aktiva`, `jns_trans`, `akun`, `laba_rugi`, `pe
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jns_angsuran`
+-- Struktur dari tabel `jns_angsuran`
 --
 
 CREATE TABLE `jns_angsuran` (
@@ -116,7 +117,7 @@ CREATE TABLE `jns_angsuran` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jns_angsuran`
+-- Dumping data untuk tabel `jns_angsuran`
 --
 
 INSERT INTO `jns_angsuran` (`id`, `ket`, `aktif`) VALUES
@@ -130,7 +131,7 @@ INSERT INTO `jns_angsuran` (`id`, `ket`, `aktif`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jns_simpan`
+-- Struktur dari tabel `jns_simpan`
 --
 
 CREATE TABLE `jns_simpan` (
@@ -141,7 +142,7 @@ CREATE TABLE `jns_simpan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `jns_simpan`
+-- Dumping data untuk tabel `jns_simpan`
 --
 
 INSERT INTO `jns_simpan` (`id`, `jns_simpan`, `jumlah`, `tampil`) VALUES
@@ -152,7 +153,7 @@ INSERT INTO `jns_simpan` (`id`, `jns_simpan`, `jumlah`, `tampil`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nama_kas_tbl`
+-- Struktur dari tabel `nama_kas_tbl`
 --
 
 CREATE TABLE `nama_kas_tbl` (
@@ -169,7 +170,7 @@ CREATE TABLE `nama_kas_tbl` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `nama_kas_tbl`
+-- Dumping data untuk tabel `nama_kas_tbl`
 --
 
 INSERT INTO `nama_kas_tbl` (`id`, `nama`, `aktif`, `tmpl_simpan`, `tmpl_penarikan`, `tmpl_pinjaman`, `tmpl_bayar`, `tmpl_pemasukan`, `tmpl_pengeluaran`, `tmpl_transfer`) VALUES
@@ -180,7 +181,7 @@ INSERT INTO `nama_kas_tbl` (`id`, `nama`, `aktif`, `tmpl_simpan`, `tmpl_penarika
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pekerjaan`
+-- Struktur dari tabel `pekerjaan`
 --
 
 CREATE TABLE `pekerjaan` (
@@ -189,7 +190,7 @@ CREATE TABLE `pekerjaan` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pekerjaan`
+-- Dumping data untuk tabel `pekerjaan`
 --
 
 INSERT INTO `pekerjaan` (`id_kerja`, `jenis_kerja`) VALUES
@@ -209,7 +210,7 @@ INSERT INTO `pekerjaan` (`id_kerja`, `jenis_kerja`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `suku_bunga`
+-- Struktur dari tabel `suku_bunga`
 --
 
 CREATE TABLE `suku_bunga` (
@@ -219,7 +220,7 @@ CREATE TABLE `suku_bunga` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `suku_bunga`
+-- Dumping data untuk tabel `suku_bunga`
 --
 
 INSERT INTO `suku_bunga` (`id`, `opsi_key`, `opsi_val`) VALUES
@@ -242,7 +243,7 @@ INSERT INTO `suku_bunga` (`id`, `opsi_key`, `opsi_val`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_anggota`
+-- Struktur dari tabel `tbl_anggota`
 --
 
 CREATE TABLE `tbl_anggota` (
@@ -267,7 +268,7 @@ CREATE TABLE `tbl_anggota` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_anggota`
+-- Dumping data untuk tabel `tbl_anggota`
 --
 
 INSERT INTO `tbl_anggota` (`id`, `nama`, `identitas`, `jk`, `tmp_lahir`, `tgl_lahir`, `status`, `agama`, `departement`, `pekerjaan`, `alamat`, `kota`, `notelp`, `tgl_daftar`, `jabatan_id`, `aktif`, `pass_word`, `file_pic`) VALUES
@@ -279,7 +280,7 @@ INSERT INTO `tbl_anggota` (`id`, `nama`, `identitas`, `jk`, `tmp_lahir`, `tgl_la
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_barang`
+-- Struktur dari tabel `tbl_barang`
 --
 
 CREATE TABLE `tbl_barang` (
@@ -293,7 +294,7 @@ CREATE TABLE `tbl_barang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tbl_barang`
+-- Dumping data untuk tabel `tbl_barang`
 --
 
 INSERT INTO `tbl_barang` (`id`, `nm_barang`, `type`, `merk`, `harga`, `jml_brg`, `ket`) VALUES
@@ -305,7 +306,7 @@ INSERT INTO `tbl_barang` (`id`, `nm_barang`, `type`, `merk`, `harga`, `jml_brg`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_pengajuan`
+-- Struktur dari tabel `tbl_pengajuan`
 --
 
 CREATE TABLE `tbl_pengajuan` (
@@ -327,7 +328,7 @@ CREATE TABLE `tbl_pengajuan` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_pinjaman_d`
+-- Struktur dari tabel `tbl_pinjaman_d`
 --
 
 CREATE TABLE `tbl_pinjaman_d` (
@@ -350,7 +351,7 @@ CREATE TABLE `tbl_pinjaman_d` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_pinjaman_h`
+-- Struktur dari tabel `tbl_pinjaman_h`
 --
 
 CREATE TABLE `tbl_pinjaman_h` (
@@ -375,7 +376,7 @@ CREATE TABLE `tbl_pinjaman_h` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_setting`
+-- Struktur dari tabel `tbl_setting`
 --
 
 CREATE TABLE `tbl_setting` (
@@ -385,7 +386,7 @@ CREATE TABLE `tbl_setting` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_setting`
+-- Dumping data untuk tabel `tbl_setting`
 --
 
 INSERT INTO `tbl_setting` (`id`, `opsi_key`, `opsi_val`) VALUES
@@ -401,7 +402,7 @@ INSERT INTO `tbl_setting` (`id`, `opsi_key`, `opsi_val`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_trans_kas`
+-- Struktur dari tabel `tbl_trans_kas`
 --
 
 CREATE TABLE `tbl_trans_kas` (
@@ -421,7 +422,7 @@ CREATE TABLE `tbl_trans_kas` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_trans_sp`
+-- Struktur dari tabel `tbl_trans_sp`
 --
 
 CREATE TABLE `tbl_trans_sp` (
@@ -444,7 +445,7 @@ CREATE TABLE `tbl_trans_sp` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_user`
+-- Struktur dari tabel `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -452,25 +453,24 @@ CREATE TABLE `tbl_user` (
   `u_name` varchar(255) NOT NULL,
   `pass_word` varchar(255) NOT NULL,
   `aktif` enum('Y','N') NOT NULL,
-  `level` enum('admin','operator','pinjaman') NOT NULL
+  `level` enum('admin','ketua','pinjaman') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_user`
+-- Dumping data untuk tabel `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`id`, `u_name`, `pass_word`, `aktif`, `level`) VALUES
 (1, 'admin', '224bec3dd08832bc6a69873f15a50df406045f40', 'Y', 'admin'),
-(4, 'user', 'e22b7d59cb35d199ab7e54ed0f2ef58f5da5347b', 'Y', 'operator'),
 (5, 'pinjaman', 'efd2770f6782f7218be595baf2fc16bc7cf45143', 'Y', 'pinjaman'),
 (8, 'iwan', 'de8737484f7eea5402374ab226bc18bdebc02b6a', 'Y', 'pinjaman'),
-(13, 'percobaan1', 'aa315c3b0592db16bba31aae16335c6544f1bd80', 'Y', 'pinjaman');
+(24, 'ketua', 'fa942de34953caa45f5d8c331b79213a09f63f55', 'Y', 'ketua');
 
 -- --------------------------------------------------------
 
 --
 -- Stand-in structure for view `v_hitung_pinjaman`
--- (See below for the actual view)
+-- (Lihat di bawah untuk tampilan aktual)
 --
 CREATE TABLE `v_hitung_pinjaman` (
 `id` bigint(20)
@@ -498,7 +498,7 @@ CREATE TABLE `v_hitung_pinjaman` (
 
 --
 -- Stand-in structure for view `v_transaksi`
--- (See below for the actual view)
+-- (Lihat di bawah untuk tampilan aktual)
 --
 CREATE TABLE `v_transaksi` (
 `tbl` varchar(1)
@@ -516,7 +516,7 @@ CREATE TABLE `v_transaksi` (
 -- --------------------------------------------------------
 
 --
--- Structure for view `v_hitung_pinjaman`
+-- Struktur untuk view `v_hitung_pinjaman`
 --
 DROP TABLE IF EXISTS `v_hitung_pinjaman`;
 
@@ -525,7 +525,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 -- --------------------------------------------------------
 
 --
--- Structure for view `v_transaksi`
+-- Struktur untuk view `v_transaksi`
 --
 DROP TABLE IF EXISTS `v_transaksi`;
 
@@ -720,19 +720,19 @@ ALTER TABLE `tbl_trans_sp`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `tbl_pengajuan`
+-- Ketidakleluasaan untuk tabel `tbl_pengajuan`
 --
 ALTER TABLE `tbl_pengajuan`
   ADD CONSTRAINT `tbl_pengajuan_ibfk_1` FOREIGN KEY (`anggota_id`) REFERENCES `tbl_anggota` (`id`);
 
 --
--- Constraints for table `tbl_pinjaman_d`
+-- Ketidakleluasaan untuk tabel `tbl_pinjaman_d`
 --
 ALTER TABLE `tbl_pinjaman_d`
   ADD CONSTRAINT `tbl_pinjaman_d_ibfk_1` FOREIGN KEY (`pinjam_id`) REFERENCES `tbl_pinjaman_h` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -741,7 +741,7 @@ ALTER TABLE `tbl_pinjaman_d`
   ADD CONSTRAINT `tbl_pinjaman_d_ibfk_4` FOREIGN KEY (`jns_trans`) REFERENCES `jns_akun` (`id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `tbl_pinjaman_h`
+-- Ketidakleluasaan untuk tabel `tbl_pinjaman_h`
 --
 ALTER TABLE `tbl_pinjaman_h`
   ADD CONSTRAINT `tbl_pinjaman_h_ibfk_1` FOREIGN KEY (`anggota_id`) REFERENCES `tbl_anggota` (`id`) ON UPDATE CASCADE,
@@ -751,7 +751,7 @@ ALTER TABLE `tbl_pinjaman_h`
   ADD CONSTRAINT `tbl_pinjaman_h_ibfk_5` FOREIGN KEY (`barang_id`) REFERENCES `tbl_barang` (`id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `tbl_trans_kas`
+-- Ketidakleluasaan untuk tabel `tbl_trans_kas`
 --
 ALTER TABLE `tbl_trans_kas`
   ADD CONSTRAINT `tbl_trans_kas_ibfk_2` FOREIGN KEY (`user_name`) REFERENCES `tbl_user` (`u_name`) ON UPDATE CASCADE,
@@ -760,7 +760,7 @@ ALTER TABLE `tbl_trans_kas`
   ADD CONSTRAINT `tbl_trans_kas_ibfk_5` FOREIGN KEY (`jns_trans`) REFERENCES `jns_akun` (`id`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `tbl_trans_sp`
+-- Ketidakleluasaan untuk tabel `tbl_trans_sp`
 --
 ALTER TABLE `tbl_trans_sp`
   ADD CONSTRAINT `tbl_trans_sp_ibfk_1` FOREIGN KEY (`anggota_id`) REFERENCES `tbl_anggota` (`id`) ON UPDATE CASCADE,

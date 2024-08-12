@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Ubah_password extends OperatorController {
+class Ubah_password extends ketuaController {
 
 	public function __construct() {
 		parent::__construct();

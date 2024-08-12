@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Angsuran_detail extends OperatorController {
+class Angsuran_detail extends ketuaController {
 
 	public function __construct() {
 		parent::__construct();	

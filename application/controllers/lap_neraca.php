@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Lap_neraca extends OperatorController {
+class Lap_neraca extends ketuaController {
 
 public function __construct() {
 		parent::__construct();	

@@ -13,7 +13,7 @@ class Login extends CI_Controller {
 	
 	public function index() {
 		// status user login = BENAR, pindah ke halaman home
-		if ($this->session->userdata('login') == TRUE && $this->session->userdata('level') == 'admin' OR $this->session->userdata('level') == 'operator') {
+		if ($this->session->userdata('login') == TRUE && $this->session->userdata('level') == 'admin' OR $this->session->userdata('level') == 'ketua') {
 			redirect('home');
 		} else {
 			// status login salah, tampilkan form login

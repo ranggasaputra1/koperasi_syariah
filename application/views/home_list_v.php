@@ -198,6 +198,7 @@ Halo, <?php echo $this->data['u_name']; ?> Silahkan pilih menu disamping untuk m
 		</div>
 	</div>
 
+	<?php if($level == 'admin') { ?>
 	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 		<div class="small-box bg-aqua">
 			<div class="inner">
@@ -231,3 +232,4 @@ Halo, <?php echo $this->data['u_name']; ?> Silahkan pilih menu disamping untuk m
 		</div>
 	</div>
 </div>
+<?php } ?>

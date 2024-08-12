@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Pelunasan extends OperatorController {
+class Pelunasan extends ketuaController {
 	public function __construct() {
 		parent::__construct();	
 		$this->load->helper('fungsi');

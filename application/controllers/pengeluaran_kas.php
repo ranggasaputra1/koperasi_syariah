@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Pengeluaran_kas extends OperatorController {
+class Pengeluaran_kas extends ketuaController {
 
 	public function __construct() {
 		parent::__construct();	

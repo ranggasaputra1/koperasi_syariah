@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Lap_kas_pinjaman extends OperatorController {
+class Lap_kas_pinjaman extends ketuaController {
 	public function __construct() {
 		parent::__construct();	
 		$this->load->helper('fungsi');

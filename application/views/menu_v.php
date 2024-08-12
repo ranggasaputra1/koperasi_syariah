@@ -21,11 +21,13 @@
 $menu_data_arr= array('jenis_simpanan','jenis_akun','jenis_kas','jenis_angsuran','data_barang','anggota','user');
 if(in_array($this->uri->segment(1), $menu_data_arr)) {echo "active";}?>">
 
+<?php if($level != 'pinjaman' && $level != 'ketua') { ?>
 <a href="#">
 	<img height="20" src="<?php echo base_url().'assets/theme_admin/img/data.png'; ?>">
 	<span>Database</span>
 	<i class="fa fa-angle-left pull-right"></i>
 </a>
+<?php } ?>
 <ul class="treeview-menu">
 	<?php if($level == 'admin') { ?>
 		<li class="<?php if ($this->uri->segment(1) == 'jenis_simpanan') { echo 'active'; } ?>">  <a href="<?php echo base_url(); ?>jenis_simpanan"> <i class="fa fa-folder-open-o"></i> Jenis Simpanan </a></li>
@@ -44,8 +46,9 @@ if(in_array($this->uri->segment(1), $menu_data_arr)) {echo "active";}?>">
 	<?php } ?>
 </ul>
 </li>
+
 <!-- Menu Transaksi -->
-<?php if($level != 'pinjaman') { ?>
+<?php if($level != 'pinjaman' && $level != 'ketua') { ?>
 <li  class="treeview <?php 
 	 $menu_trans_arr= array('pemasukan_kas','pengeluaran_kas', 'transfer_kas');
 	 if(in_array($this->uri->segment(1), $menu_trans_arr)) {echo "active";}?>">
@@ -65,7 +68,7 @@ if(in_array($this->uri->segment(1), $menu_data_arr)) {echo "active";}?>">
 </li>
 <?php } ?>
 
-<?php if($level != 'pinjaman') { ?>
+<?php if($level != 'pinjaman' && $level != 'ketua') { ?>
 <!-- Menu Simpanan -->
 <li  class="treeview <?php 
 	 $menu_trans_arr= array('simpanan','penarikan');

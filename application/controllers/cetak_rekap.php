@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Cetak_rekap extends OperatorController {
+class Cetak_rekap extends ketuaController {
 
 	public function __construct() {
 		parent::__construct();

@@ -1,12 +1,12 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class OperatorController extends MY_Controller
+class ketuaController extends MY_Controller
 {
 
 	public function __construct() {
 		parent::__construct();
 		// cek status level admin
-		if ($this->session->userdata('level') == 'admin' || $this->session->userdata('level') == 'operator') {
+		if ($this->session->userdata('level') == 'admin' || $this->session->userdata('level') == 'ketua') {
 			//oke
 			$this->data['akses'] = TRUE;
 		} else {

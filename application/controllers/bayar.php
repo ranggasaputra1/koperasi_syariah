@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Bayar extends OperatorController {
+class Bayar extends ketuaController {
 	public function __construct() {
 		parent::__construct();	
 		$this->load->helper('fungsi');

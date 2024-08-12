@@ -34,7 +34,7 @@ class MY_Controller extends CI_Controller
 			$this->load->model('notif_m');
 			$this->load->helper('fungsi');
 			$notif['notif_tempo'] = array();
-			if($this->session->userdata('level') == 'operator' || $this->session->userdata('level') == 'admin') {
+			if($this->session->userdata('level') == 'ketua' || $this->session->userdata('level') == 'admin') {
 				$notif['notif_tempo'] = $this->notif_m->get_data_tempo();
 			}
 			$notif['notif_pengajuan'] = $this->notif_m->get_pengajuan();
@@ -69,7 +69,7 @@ class OPPController extends MY_Controller
 	public function __construct() {
 		parent::__construct();
 		// cek status level admin
-		if ($this->session->userdata('level') == 'admin' || $this->session->userdata('level') == 'pinjaman' || $this->session->userdata('level') == 'operator') {
+		if ($this->session->userdata('level') == 'admin' || $this->session->userdata('level') == 'pinjaman' || $this->session->userdata('level') == 'ketua') {
 			//oke
 			$this->data['akses'] = TRUE;
 		} else {
